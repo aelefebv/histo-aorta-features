@@ -2,16 +2,6 @@ import numpy as np
 import scipy
 
 
-def get_channel_percentage_contributions(im_stack):
-    """Takes a 3D image (XYZ) and returns percentage contribution of each channel to total sum at pixel."""
-    percentages = np.zeros_like(im_stack, dtype='float')
-    sum_stack = np.sum(im_stack, axis=2)
-    for channel in range(im_stack.shape[-1]):
-        percentages[..., channel] = im_stack[..., channel] / sum_stack
-        percentages[np.isinf(im_stack[..., channel]), channel] = 1
-    return percentages
-
-
 class StatsHolder:
     def __init__(self, stat_array):
         self.mean = None

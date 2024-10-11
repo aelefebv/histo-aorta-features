@@ -1,5 +1,4 @@
 import csv
-import glob
 import os
 import os.path
 from datetime import datetime

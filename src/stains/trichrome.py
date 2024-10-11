@@ -6,7 +6,7 @@ import skimage
 from histo_tools import deconvolution
 from tifffile import tifffile
 
-from histo_ECM.src import utils, stains
+from src import utils, stains
 
 
 class Trichrome:

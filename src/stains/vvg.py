@@ -5,7 +5,7 @@ import scipy
 import skimage
 import tifffile
 from histo_tools import deconvolution
-from histo_ECM.src import stains, utils
+from src import stains, utils
 
 
 class Pixel:
